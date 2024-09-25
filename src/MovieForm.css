@@ -1,0 +1,56 @@
+/* MovieForm.css */
+.form-container {
+    background-color: white; /* Form background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px; /* Padding around the form */
+    max-width: 600px; /* Maximum width for the form */
+    margin: auto; /* Center the form horizontally */
+}
+
+.form-input {
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners for inputs */
+    padding: 10px; /* Padding inside the inputs */
+    width: 100%; /* Full width */
+    margin-bottom: 15px; /* Space between inputs */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.form-input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove outline */
+}
+
+.form-textarea {
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners for textarea */
+    padding: 10px; /* Padding inside the textarea */
+    width: 100%; /* Full width */
+    height: 100px; /* Fixed height for the textarea */
+    margin-bottom: 15px; /* Space below the textarea */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.form-textarea:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove outline */
+}
+
+.preview-image {
+    margin-bottom: 15px; /* Space below the image */
+}
+
+.submit-button {
+    background-color: #007bff; /* Blue background for the button */
+    color: white; /* White text */
+    padding: 10px 15px; /* Padding for the button */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

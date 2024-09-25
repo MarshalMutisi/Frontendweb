@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import MovieList from './MovieList';
+import MovieDetail from './MovieDetail';
+import MovieForm from './MovieForm';
+import Navbar from './Navbar'; // Import the Navbar component
+import './App.css'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="container mx-auto">
+            <Navbar /> {/* Render the Navbar */}
+            <div className="p-6">
+                <Routes>
+                    <Route path="/" element={<MovieList />} />
+                    <Route path="/movies/:id" element={<MovieDetail />} />
+                    <Route path="/add-movie" element={<MovieForm />} />
+                </Routes>
+            </div>
+        </div>
+    );
 }
 
 export default App;

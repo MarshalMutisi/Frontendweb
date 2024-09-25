@@ -1,0 +1,70 @@
+/* Navbar.css */
+.navbar {
+    background-color: #007bff; /* Navbar background color */
+    padding: 16px; /* Padding for the navbar */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container */
+}
+
+.navbar-title {
+    color: white; /* Navbar title color */
+    font-size: 24px; /* Title font size */
+    font-weight: bold; /* Title font weight */
+}
+
+.navbar-links {
+    display: flex;
+    flex-direction: column; /* Column layout for mobile */
+    align-items: center; /* Center the links */
+    max-height: 0; /* Initially hide the navbar links */
+    overflow: hidden; /* Hide overflow */
+    transition: max-height 0.3s ease; /* Smooth transition */
+}
+
+.navbar-links.show {
+    max-height: 200px; /* Set a height when visible */
+}
+
+.navbar-link {
+    color: white; /* Link color */
+    padding: 8px 16px; /* Link padding */
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Hamburger icon styles */
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+    transition: all 0.3s ease; /* Smooth transition for transformations */
+}
+
+/* Transformations for the hamburger icon when the menu is open */
+.hamburger.open div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open div:nth-child(2) {
+    opacity: 0; /* Hide the middle bar */
+}
+
+.hamburger.open div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
